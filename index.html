@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f7e7c1;
+        }
+        .header {
+            width: 100%;
+            height: 350px; 
+            background: url('bears.jpg') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .navbar {
+            width: 100%;
+            background-color: #6b5f38;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .navbar a:hover {
+            color: lightblue;
+            transform: scale(1.1);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 60px;
+            padding: 80px;
+        
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.349);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            border: 3px solid rgba(0, 0, 0, 0.226);
+        }
+            .card2 {
+            background: rgba(255, 255, 255, 0.349);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            border: 3px solid rgba(0, 0, 0, 0.226);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card2:hover{
+            transform: scale(1.05);
+        }
+        .card h2 {
+            margin-bottom: 10px;
+            color: #6b5f38;
+        }
+        .card2 h2 {
+            margin-bottom: 10px;
+            color: #6b5f38;
+        }
+        .card p {
+            font-size: 30px;
+            color: #444;
+        }
+        .card2 p {
+            font-size: 30px;
+            color: #444;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            margin-top: 50px;
+        }
+        .card2 video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            margin-top: 50px;
+        }
+        .card img:hover {
+            transform: scale(1.1);
+        }
+        .card2 video:hover {
+            transform: scale(1.1);
+        }
+        .footer {
+            background-color: #6b5f38;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">More</a>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>Photo of me:</p>
+            <img src="coedypicture.jpg" alt="About Me">
+        </div>
+        <div class="card2">
+            <h2>Hobbies</h2>
+            <p>Genshin Impact:</p>
+            <video controls src="genshinimpact.mp4" width="700">
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Coedy de la Cruz</p>
+    </div>
+</body>
+</html>
